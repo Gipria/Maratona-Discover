@@ -78,14 +78,17 @@ header{
 }
 
 /*Table __________________________*/
-#transaction{
-    
-}
 #data-table{
     width: 100%;
     border-spacing: 0 0.5rem;
     color: #969cb3;
 }
+
+table thead tr th:first-child,
+table tbody tr td:first-child{
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
 table th{
     background: white;
 
@@ -95,19 +98,36 @@ table th{
 
     text-align: left;
     color: #969CB3;
-
 }
-table td{
+
+table tbody tr{
+    opacity: 0.7;
+}
+table tbody tr:hover{
+    opacity: 1;
+}
+
+table tbody td{
     background: white;
     padding: 1rem 2rem;
 }   
 
-table thead tr th:first-child,
-table tbody tr td:first-child{
-    border-radius: 0.25rem 0 0 0.25rem;
+td.description{
+    color: var(--dark-blue);
 }
+td.income{
+    color: #12a454;
+}
+td.expense{
+    color:#e92929 ;
+}
+
 
 /*Footer __________________________*/
 footer{
     text-align: center;
+    padding: 4rem 0 2rem;
+    color: var(--dark-blue);
+
+    opacity: 0.6;
 }
