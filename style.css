@@ -1,7 +1,35 @@
 *{
-    color: green;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1{
-    
+body{
+    background: #f0f2f5;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: min(90vw, 800px);
+    height: ;
+    margin: auto;
+}
+
+/*Header __________________________*/
+header{
+    background: #2d4A22;
+    padding: 2rem 0 10rem;
+    text-align: center;
+}
+
+#logo{
+    color: #fff;
+    font-weight: 100; /*fonte fina*/
+}
+
+/*Balance __________________________*/
+
+/*Footer __________________________*/
+footer{
+    text-align: center;
 }
