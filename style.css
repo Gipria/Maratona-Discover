@@ -30,6 +30,7 @@ body{
     width: min(90vw, 800px);
     margin: auto;
 }
+
 /*Titles __________________________*/
 h2{
     margin-top:3.2rem;
@@ -39,7 +40,22 @@ h2{
     font-weight: normal;
 }
 
+/*Links & Buttons __________________________*/
+a{
+    color: #49AA26;
+    text-decoration: none; /*tirar a url*/
 
+}
+
+a:hover{
+    color: #3dd705;
+}
+/*.button.new= inside
+button .new= additive*/
+.button .new {
+    display: inline-block;
+    margin-bottom: .8rem;
+}
 /*Header __________________________*/
 header{
     background: #2d4A22;
