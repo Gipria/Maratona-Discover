@@ -118,6 +118,7 @@ header{
     width: 100%;
     border-spacing: 0 0.5rem;
     color: #969cb3;
+
 }
 
 table thead tr th:first-child,
@@ -162,7 +163,36 @@ td.expense{
     color:#e92929 ;
 }
 
+/*Modal __________________________*/
+.modal-overlay{
+    width: 100%;
+    height: 100%;
 
+    background-color: rgba(0, 0, 0, 0.7);
+
+    position:fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+    
+}
+
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal{
+    background: #f0f2f5;
+    padding: 2.4rem;
+    position:relative;
+    border-radius: 0.25rem;
+}
 /*Footer __________________________*/
 footer{
     text-align: center;
