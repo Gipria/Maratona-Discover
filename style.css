@@ -1,6 +1,7 @@
 /*Global __________________________*/
 :root{
     --dark-blue:#363F5F;
+    --green: #49AA26;
 }
 
 *{
@@ -54,6 +55,15 @@ a{
 a:hover{
     color: #3dd705;
 }
+button{
+    width: 100%;
+    height: 50px;
+
+    border: none;
+
+    color: white;
+}
+
 /*.button.new= inside
 button .new= additive*/
 .button .new {
@@ -216,8 +226,16 @@ input{
 .input-group small{
     opacity: 0.4; 
 }
+.input-group.actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-
+.input-group.actions .button,
+.input-group.actions button{
+    width: 48%;
+}
 /*Footer __________________________*/
 footer{
     text-align: center;
