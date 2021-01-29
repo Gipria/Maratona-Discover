@@ -190,9 +190,34 @@ td.expense{
 .modal{
     background: #f0f2f5;
     padding: 2.4rem;
-    position:relative;
+
     border-radius: 0.25rem;
 }
+/*Form __________________________*/
+#form {
+    max-width: 500px;
+}
+
+#form h2{
+    margin-top: 0;
+}
+input{
+    border: none;
+    border-radius:  0.2rem;
+
+    padding: 0.8rem;
+
+    width: 100%;
+}
+.input-group{
+    margin-top: 0.8rem;
+}
+
+.input-group small{
+    opacity: 0.4; 
+}
+
+
 /*Footer __________________________*/
 footer{
     text-align: center;
