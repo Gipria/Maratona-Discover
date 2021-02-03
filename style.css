@@ -220,6 +220,8 @@ td.expense{
 
     opacity: 0;
     visibility: hidden;
+
+    z-index: 999; /*Empilhamento*/
     
 }
 
@@ -233,6 +235,8 @@ td.expense{
     padding: 2.4rem;
 
     border-radius: 0.25rem;
+    position: relative;
+    z-index: 1;/*Empilhamento*/
 }
 /*Form __________________________*/
 #form {
