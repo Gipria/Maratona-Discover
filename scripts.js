@@ -23,7 +23,7 @@ const Modal= {
 const transactions = [{
     id:1,
     description:'Luz',
-    amount: -50000
+    amount: -50000,
 
 },{},{}]
 
