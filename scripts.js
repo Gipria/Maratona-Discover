@@ -1,5 +1,3 @@
-const { totalmem } = require("os")
-
 const Modal= {
     open(){
         //Abrir modal
@@ -20,12 +18,27 @@ const Modal= {
     }
 }
 
-const transactions = [{
-    id:1,
-    description:'Luz',
-    amount: -50000,
+const transactions = [
+    {
+        id:1,
+        description:'Luz',
+        amount: -50000,
+        date:'23/01/2021',
 
-},{},{}]
+    },
+    {
+        id:2,
+        description:'Website',
+        amount: 500000,
+        date:'23/01/2021',
+    },
+    {
+        id:3,
+        description:'Internet',
+        amount: -20000,
+        date:'23/01/2021',
+    }
+]
 
 const Transaction = {
     incomes() {
@@ -34,7 +47,7 @@ const Transaction = {
     expenses() {
         //somar as saídas
     },
-    totalmem() {
+    total() {
         //entradas - saídas
     }
 }
