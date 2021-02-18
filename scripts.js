@@ -38,6 +38,13 @@ const transactions = [
         amount: -20000,
         date:'23/01/2021',
     }
+
+    {
+        id:4,
+        description:'app',
+        amount: -20000,
+        date:'23/01/2021',
+    }
 ]
 
 const Transaction = {
@@ -53,25 +60,36 @@ const Transaction = {
 }
 
 const DOM = {
+    transactionsContainer: document.querySelector('#data-tabletbody'),
     addTransaction(transaction, index){
         const tr = document.createElement('tr')
-        tr.innerHTML = DOM.innerHTMLTransaction()
+        tr.innerHTML = DOM.innerHTMLTransaction(transaction)
 
-        console.log(tr.innerHTML)
+        DOM.transactionsContainer.appendChild(tr)
+
     },
     //funcionalidade//
     innerHTMLTransaction(transaction){
+        const Cssclass = transaction.amount > 0 ? "income":
+        "expense"
+
+       // const amount =
         const html = `
 
             <td class="description">${transaction.description}</td>
             <td class="expense">${transaction.amoun}</td>
             <td>${transaction.date}</td>
             <td>
-                <img src="./assets/minus.svg" alt="Remover Transação">
+                <img src="./assets/Sminus.svg" alt="Remover Transação">
                 </td>
             `
             return html
         
     }
 }
-DOM.addTransaction(transactions[0])
+
+
+
+transactions.forEach(funtion(transaction){
+    DOM.addTransaction(transaction)
+})
