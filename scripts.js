@@ -78,20 +78,20 @@ const DOM = {
         const html = `
 
             <td class="description">${transaction.description}</td>
-            <td class="expense">${transaction.amoun}</td>
-            <td>${transaction.date}</td>
+            <td class="${Cssclass}">${transaction.amoun}</td>
+            <td> class="date">${transaction.date}</td>
             <td>
-                <img src="./assets/Sminus.svg" alt="Remover Transação">
-                </td>
+                <img src="./assets/minus.svg" alt="Remover Transação">
+            </td>
             `
             return html
         
     }
 }
 
-const Utils ={
-    formatCurrency(value){
-        console.log(value)
+const Utils = {
+    formatCurrency(value) {
+        const signal = Number(value)
     }
 }
 
