@@ -73,7 +73,8 @@ const DOM = {
         const Cssclass = transaction.amount > 0 ? "income":
         "expense"
 
-       // const amount =
+        const amount = Utils.formatCurrency(transaction.amount)
+
         const html = `
 
             <td class="description">${transaction.description}</td>
@@ -88,6 +89,11 @@ const DOM = {
     }
 }
 
+const Utils ={
+    formatCurrency(value){
+        console.log(value)
+    }
+}
 
 
 transactions.forEach(funtion(transaction){
