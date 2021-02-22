@@ -37,7 +37,7 @@ const transactions = [
         description:'Internet',
         amount: -20000,
         date:'23/01/2021',
-    }
+    },
 
     {
         id:4,
@@ -61,6 +61,7 @@ const Transaction = {
 
 const DOM = {
     transactionsContainer: document.querySelector('#data-tabletbody'),
+
     addTransaction(transaction, index){
         const tr = document.createElement('tr')
         tr.innerHTML = DOM.innerHTMLTransaction(transaction)
@@ -70,7 +71,7 @@ const DOM = {
     },
     //funcionalidade//
     innerHTMLTransaction(transaction){
-        const Cssclass = transaction.amount > 0 ? "income":
+        const Cssclass = transaction.amount > 0 ? "income" :
         "expense"
 
         const amount = Utils.formatCurrency(transaction.amount)
@@ -78,7 +79,7 @@ const DOM = {
         const html = `
 
             <td class="description">${transaction.description}</td>
-            <td class="${Cssclass}">${transaction.amoun}</td>
+            <td class="${Cssclass}">${transaction.amount}</td>
             <td> class="date">${transaction.date}</td>
             <td>
                 <img src="./assets/minus.svg" alt="Remover Transação">
@@ -87,14 +88,7 @@ const DOM = {
             return html
         
     }
-}
-
-const Utils = {
-    formatCurrency(value) {
-        const signal = Number(value)
-    }
-}
-
+};
 
 transactions.forEach(funtion(transaction){
     DOM.addTransaction(transaction)
