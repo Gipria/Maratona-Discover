@@ -96,6 +96,6 @@ const Utils = {
     }
 }
 
-transactions.forEach(funtion(transaction){
+transactions.forEach(function(transaction) {
     DOM.addTransaction(transaction)
 })
