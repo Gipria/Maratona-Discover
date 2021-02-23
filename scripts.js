@@ -88,7 +88,13 @@ const DOM = {
             return html
         
     }
-};
+}
+
+const Utils = {
+    formatCurrency(value){
+        const signal = Number(value) <0 ? "-" : ""
+    }
+}
 
 transactions.forEach(funtion(transaction){
     DOM.addTransaction(transaction)
